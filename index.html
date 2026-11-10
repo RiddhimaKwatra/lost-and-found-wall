@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lost & Found Wall</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🔎 Lost &amp; Found Wall</div>
+  <nav id="tabs">
+    <button data-view="wall" class="active">Wall</button>
+    <button data-view="mine">My Posts</button>
+    <button data-view="returned">Returned</button>
+    <button data-view="messages">Messages <span id="unread" class="badge hidden">0</span></button>
+  </nav>
+  <div class="userbox">
+    <span id="userLabel"></span>
+    <button id="switchUser" class="ghost">Switch user</button>
+    <button id="newPost" class="primary">+ New post</button>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<div id="modal" class="modal hidden"><div class="modal-card" id="modalCard"></div></div>
+<div id="toast" class="toast hidden"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
